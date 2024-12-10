@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center px-4 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition-colors;
+  }
+
+  .btn-white {
+    @apply inline-flex items-center px-6 py-3 rounded-lg bg-white text-indigo-600 hover:bg-gray-100 transition-colors font-semibold;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center px-6 py-3 rounded-lg border-2 border-white text-white hover:bg-white hover:text-indigo-600 transition-colors font-semibold;
+  }
+}
+
+.bg-grid-white {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+}
